@@ -28,6 +28,7 @@ body{
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
 	background-color: #00002E;
 	color: #fff;
@@ -38,10 +39,8 @@ body{
 .topo{
 	display: flex;
 	width: 100vw;
-	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 }
-
 	
 /*PÁGINA INICIAL*/
 .pg-home {
@@ -99,18 +98,25 @@ footer button {
 	background-color: #00002E;
 	color: #fff;
 	border: 2px solid #fff;
-	margin-bottom: 20px;
+	margin: 40px 0 30px;
 }
-
+figcaption {
+	display: none;
+}
 /*RODAPÉ*/
 		
 @media (min-width: 768px) {
 	/*TOPO*/
+	body {
+		justify-content: center;
+	}
 	.topo{
 	display: flex;
 	width: 100vw;
 	flex-direction: column;
 	align-items: flex-start;
+	position: absolute;
+	top: 0;
 	}
 	.topo img {
 		width: 250px;
